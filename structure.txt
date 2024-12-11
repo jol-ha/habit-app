@@ -1,0 +1,26 @@
+
+                                       +----------------------------+
+                                       |    habit_tracker.py        |
+                                       |  habit_tracker.habit()     |
+                                       +----------------------------+
+                                                   |
+       +------------------------+---------------------------+-----------------------+------------+
+       |                        |                           |                       |            |
++---------------+ +-----------------------+ +----------------------------+ +-------------------+ |
+| [i]           | | [e]                   | | [c]                        | | [d]               | |
+|initiation.py >| |> entry.py            >| |>calculation_daily.py    >> | |> delete_habit.py >| |
+|add_habit()    | |   enter_date()        | |>calculation_weekly.py  >>> | |   delete_habit()  | |
+|               | |   enter(csv_file_path)| |    calculate(csv_file_path)| |                   | |
++---------------+ +-----------------------+ |>>> elaborate_weekly.py >>>>| +-------------------+ |
+                                            |   elaborate()              |                       |
+                                            +----------------------------+                       |
+                 +-------------------------------------------------------------------------------+
+                 |
+      +---------------------------+       legend:
+      | csv-files                 |          - gives data to a csv-file >
+      |>   raw_data.csv           |          - > takes date from a csv-file 
+      |>>  daily_columns_file.csv |          - number of ">" indicated the csv-file connection
+      |>>> weekly_columns_file.csv|
+      |>>>> cleaned_data.csv      |
+      +---------------------------+
+
