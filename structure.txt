@@ -17,10 +17,10 @@
                  +-------------------------------------------------------------------------------+
                  |
       +---------------------------+       legend:
-      | csv-files                 |          - gives data to a csv-file >
-      |>   raw_data.csv           |          - > takes date from a csv-file 
-      |>>  daily_columns_file.csv |          - number of ">" indicated the csv-file connection
-      |>>> weekly_columns_file.csv|
+      | csv-files                 |          - opinion of ">",">>"..
+      |>   raw_data.csv           |          - gives data to a csv-file > 
+      |>>  daily_columns_file.csv |          - > takes date from a csv-file 
+      |>>> weekly_columns_file.csv|          - number of ">" indicated the csv-file connection
       |>>>> cleaned_data.csv      |
       +---------------------------+
 
